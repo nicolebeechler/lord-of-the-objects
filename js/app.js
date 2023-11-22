@@ -170,6 +170,10 @@ function leaveTheShire() {
   console.log("6: leaveTheShire");
 
   // assemble the `hobbits` and move them to `rivendell`
+  const allHobbits = document.querySelectorAll('.hobbit');
+  for (let hobbit of allHobbits) {
+    document.getElementById('rivendell').appendChild(hobbit);
+  }
 }
 
 // COMMIT YOUR WORK
